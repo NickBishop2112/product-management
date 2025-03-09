@@ -18,21 +18,22 @@ The Product Management Dashboard contains the following features:
 
 ## Step 1 - clone the Git repo
 ```
-git clone <?>
+git clone https://github.com/NickBishop2112/product-management
 ```
 
 ## Step 2 - Run the app
 The instruction are:
 1. Open a command prompt such as a vscode terminal. 
-2. Go to the `product-management` folder
+2. Go to the `product-management` folder.
 3. Run the app:
 ```
 run-app.bat
 ```
-
+4. Wait until the dashboard is shown in the browser.
 ## Step 3 - Testing
 ### Register a product
-Navigate to `http://localhost:8080/swagger/index.html` and select the Register endpoint.
+To register a new product, navigate to `http://localhost:8080/swagger/index.html` and select the `/api/Products` endpoint.
+
 
 ### View the dashboard
 Start the browser and go to `http://localhost:3000/`. Press f5 from the brower to refresh.
