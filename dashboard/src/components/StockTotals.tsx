@@ -57,11 +57,16 @@ export const StockTotals = () => {
                 }
             },
             scales: {
-                x: {
+                x: {      
+                    ticks: {
+                        autoSkip: false, 
+                        maxRotation: 45, 
+                        minRotation: 45  
+                    },
                     title: {
-                        display: true,
+                        display: true,   
                         text: "Categories" 
-                    }
+                    }                             
                 },
                 y: {
                     beginAtZero: true,
@@ -77,7 +82,7 @@ export const StockTotals = () => {
             }};
 
     return (
-      <div style={{ width: "600px", height: "400px", margin: "0 auto" }}>
+      <div style={{ width: "800px", height: "400px", margin: "0 auto" }}>
         <h3>Stock Totals</h3>
         <div>
             <Bar data={chartData} options={options} />                  
